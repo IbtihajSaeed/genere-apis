@@ -27,4 +27,11 @@ describe("Genere Unit Tests", () => {
       });
       
     });
+    describe("get Genere by id", function () {
+        it("should successfully get genere by id", async () =>  {
+          const result = await request.get("genere/4");
+          expect(result.statusCode).equal(200);
+        });
+        
+      });
   });
